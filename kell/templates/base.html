@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %} - Jordan Kell</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    {% include 'includes/nav.html' %}
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+    <div class="row mt-5">
+      <div class="col bg-primary"><h1>primary</h1></div>
+      <div class="col bg-secondary"><h1>secondary</h1></div>
+      <div class="col bg-success"><h1>success</h1></div>
+      <div class="col bg-info"><h1>info</h1></div>
+      <div class="col bg-warning"><h1>warning</h1></div>
+      <div class="col bg-danger"><h1>danger</h1></div>
+      <div class="col bg-light"><h1>light</h1></div>
+      <div class="col bg-dark"><h1>dark</h1></div>
+  </div>
+  <script src="{{ url_for('static', filename='js/page.js') }}"></script>
+</html>

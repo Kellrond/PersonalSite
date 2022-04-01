@@ -1,0 +1,55 @@
+@import "../bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+$primary: #8EB1C7;
+$secondary: #2E5EAA;
+$success: #A7D49B;
+$info: #92AC86;
+$warning: #EB4511;
+$danger: #B02E0C;
+$light: #fff9ec;
+$dark: #3A3335;
+
+$body-bg: $light;
+// $body-color: #111;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../bootstrap/scss/root";
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+@import "../bootstrap/scss/images";
+@import "../bootstrap/scss/containers";
+@import "../bootstrap/scss/grid";
+
+@import "../bootstrap/scss/_tables.scss";
+@import "../bootstrap/scss/_forms.scss";
+@import "../bootstrap/scss/_buttons.scss";
+@import "../bootstrap/scss/_transitions.scss";
+@import "../bootstrap/scss/_dropdown.scss";
+@import "../bootstrap/scss/_button-group.scss";
+@import "../bootstrap/scss/_nav.scss";
+@import "../bootstrap/scss/_navbar.scss";
+@import "../bootstrap/scss/_card.scss";
+@import "../bootstrap/scss/_accordion.scss";
+@import "../bootstrap/scss/_breadcrumb.scss";
+@import "../bootstrap/scss/_pagination.scss";
+@import "../bootstrap/scss/_badge.scss";
+@import "../bootstrap/scss/_alert.scss";
+@import "../bootstrap/scss/_progress.scss";
+@import "../bootstrap/scss/_list-group.scss";
+@import "../bootstrap/scss/_close.scss";
+@import "../bootstrap/scss/_toasts.scss";
+@import "../bootstrap/scss/_modal.scss";
+@import "../bootstrap/scss/_tooltip.scss";
+@import "../bootstrap/scss/_popover.scss";
+@import "../bootstrap/scss/_carousel.scss";
+@import "../bootstrap/scss/_spinners.scss";
+@import "../bootstrap/scss/_offcanvas.scss";
+@import "../bootstrap/scss/_helpers.scss";
+@import "../bootstrap/scss/utilities";
+@import "../bootstrap/scss/utilities/_api.scss";

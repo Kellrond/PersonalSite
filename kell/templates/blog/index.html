@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="position-relative">
+    <img src="{{ url_for('static', filename='images/head.png') }}" class="img-fluid" alt="Home page image">
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-4 p-0 fs-1 text-dark fw-bold text-center">
+      Jordan Kell
+      <hr class="m-0" />
+    </div>
+    <div class="fs-5 p-0 text-dark fw-bold text-center">Code explorer | Data wizard</div>
+  </div>
+
+
+  <div class="bg-success mt-5">
+    {% for post in posts %}
+      <article class="">
+        <header>
+          <div>
+            <h1>{{ post['title'] }}</h1>
+            <div class="about">by {{ post['username'] }} on {{ post['created'].strftime('%Y-%m-%d') }}</div>
+          </div>
+          {% if g.user['id'] == post['author_id'] %}
+            <a class="action" href="">Edit</a>
+          {% endif %}
+        </header>
+        <p class="body">{{ post['body'] }}</p>
+      </article>
+      {% if not loop.last %}
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endblock %}
